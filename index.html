@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Tipo de Cuenta</title>
+</head>
+<body>
+
+    <h2>Formulario 4</h2>
+
+    <form action="/procesar_formulario" method="post">
+        <!-- Campo para el nombre -->
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <br>
+
+        <!-- Campo para el correo electrónico -->
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+
+        <br>
+
+        <!-- Botones de radio para el tipo de cuenta -->
+        <label>Tipo de Cuenta:</label>
+        <br>
+        <input type="radio" id="estandar" name="tipo_cuenta" value="estandar" checked>
+        <label for="estandar">Estándar</label>
+
+        <br>
+
+        <input type="radio" id="premium" name="tipo_cuenta" value="premium">
+        <label for="premium">Premium</label>
+
+        <br>
+
+        <input type="radio" id="basico" name="tipo_cuenta" value="basico">
+        <label for="basico">Básico</label>
+
+        <br>
+
+        <!-- Botón de envío -->
+        <input type="submit" value="Enviar">
+
+    </form>
+
+</body>
+</html>
